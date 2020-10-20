@@ -7,13 +7,13 @@
   <!-- MedCom DK CDA APD profile OID, CONF-DK-APD:6c69 -->
   <templateId root="1.2.208.184.14.1" extension="2019-09-10"/>
   <!-- CONF-DK-APD: a5bd, CONF-DK-APD: c89b -->
-  <id extension="test0101-7953-49ce-8653-cp0504891006" root="1.2.208.184"
+  <id extension="test0101-7953-49ce-8653-cp0504899756" root="1.2.208.184"
     assigningAuthorityName="MedCom"/>
   <!-- LOINC code for appointment date, CONF-DK-APD:7d26, CONF-DK-APD:e56b, CONF-DK-APD:4660 -->
   <code code="39289-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
     displayName="Dato og tidspunkt for møde mellem patient og sundhedsperson"/>
   <!-- title = "Aftale for" + patient id  CONF-DK-APD:9ac6 -->
-  <title>Aftale for 0504891006</title>
+  <title>Aftale for 0504899756</title>
   <!-- ClinicalDocumemt.effectiveTime 1..1 (xsd), CONF-DK: 33,CONF-DK: 35 -->
   <effectiveTime value="20201229095800+0100"/>
   <!-- CONF-DK: 36 -->
@@ -24,7 +24,7 @@
   <!-- information about the patient-->
   <recordTarget typeCode="RCT" contextControlCode="OP">
     <patientRole classCode="PAT">
-      <id extension="0504891006" root="1.2.208.176.1.2" assigningAuthorityName="CPR"/>
+      <id extension="0504899756" root="1.2.208.176.1.2" assigningAuthorityName="CPR"/>
       <addr use="H">
         <streetAddressLine>Ølborggade 442</streetAddressLine>
         <city>København V</city>
