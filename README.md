@@ -46,7 +46,7 @@ DTG: https://stamdata.nspop.dk/dtg-webservice/persons/0404849086
 
 | Nr  | Testens formål                                                                       | Template                                                                                                                                                                                                                 | Dokument id                                      | Faktisk xml                                                                           | Cda viewer link           |
 | --- | --- | --- |--- | --- | --- | 
-| 0401 | Navne- og adressebeskyttelse                                                        | [DK-APD_Example_1_5_apd_region.xml](http://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_5_apd_region.xml)                                         |  |  |  |
+| 0401 | Navne- og adressebeskyttelse                                                        | [DK-APD_Example_1_5_apd_region.xml](http://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_5_apd_region.xml)                                         | test0401-0001-49ce-8653-cp0404849086^1.2.208.184 | [XML](./xmlfiler/401_0404849086_DK-APD_Example_1_5_apd_region.xml)                    | [Dokument](https://cdaviewer.medcom.dk/cdaviewer-test1/search?patientID=0404849086&uniqueID=test0401-0001-49ce-8653-cp0404849086%5e1.2.208.184) |
 
 
 ##  5. Hans Petersen 1710194919
@@ -55,6 +55,5 @@ DTG: https://stamdata.nspop.dk/dtg-webservice/persons/1710194919
 
 | Nr  | Testens formål                                                                       | Template                                                                                                                                                                                                                 | Dokument id                                      | Faktisk xml                                                                           | Cda viewer link           |
 | --- | --- | --- |--- | --- | --- | 
-| 0501 | Barn | []()                                                                         | [DK-APD_Example_1_5_apd_region.xml](http://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_5_apd_region.xml)                                         |  |  |
-
+| 0501 | Barn                                                                                | [DK-APD_Example_1_12_apd_region_days.xml](https://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_12_apd_region_days.xml)                            | test0501-0001-49ce-8653-cp1710194919^1.2.208.184 | [XML](./xmlfiler/501_1710194919_DK-APD_Example_1_12_apd_region_days.xml)              | [Dokument](https://cdaviewer.medcom.dk/cdaviewer-test1/search?patientID=1710194919&uniqueID=test0501-0001-49ce-8653-cp1710194919%5e1.2.208.184) |
 

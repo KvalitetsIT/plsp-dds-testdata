@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="./Lantana-cda-web-DK.xsl"?> 
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:hl7-org:v3 ./../../Schema/CDA_SDTC.xsd" xmlns="urn:hl7-org:v3"
+  classCode="DOCCLIN" moodCode="EVN">
+  <!-- Requirement CONF-DK-APD:cdc3 -->
+  <realmCode code="DK"/>
+  <!-- HL7-registreret RMIM (HL7 internal) = 2.16.840.1.113883.1.3 -->
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <!-- MedCom DK CDA APD profile OID, CONF-DK-APD:6c69 -->
+  <templateId root="1.2.208.184.14.1" extension="2019-09-10"/>
+  <!-- CONF-DK-APD: a5bd, CONF-DK-APD: c89b -->
+  <id extension="test0501-0001-49ce-8653-cp1710194919" root="1.2.208.184"
+    assigningAuthorityName="MedCom"/>
+  <!-- LOINC code for appointment date, CONF-DK-APD:7d26, CONF-DK-APD:e56b, CONF-DK-APD:4660 -->
+  <code code="39289-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+    displayName="Dato og tidspunkt for møde mellem patient og sundhedsperson"/>
+  <!-- title = "Aftale for" + patient id  CONF-DK-APD:9ac6 -->
+  <title>Aftale for 1710194919</title>
+  <!-- ClinicalDocumemt.effectiveTime 1..1 (xsd), CONF-DK: 33,CONF-DK: 35 -->
+  <effectiveTime value="20201130122000+0100"/>
+  <!-- CONF-DK: 36 -->
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <!-- CONF-DK: 37, CONF-DK: 38, CONF-DK: 39,CONF-DK: 40 -->
+  <languageCode code="da-DK"/>
+
+  <!-- information about the patient-->
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <!-- exactly one patientRole element must be specified -->
+    <patientRole classCode="PAT">
+      <!-- patientRole.id 1..*, CONF-DK: 1, CONF-DK: 2, CONF-DK: 3, CONF-DK: 4, CONF-DK: 5 -->
+      <id extension="1710194919" root="1.2.208.176.1.2" assigningAuthorityName="CPR"/>
+      <addr use="WP">
+        <streetAddressLine>Spørring Møllevej 104</streetAddressLine>
+        <postalCode>5320</postalCode>
+        <city>Agedrup</city>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>Hans</given>
+          <!-- CONF-DK:6 -->
+          <family>Petersen</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="191017000000+0000"/>
+      </patient>
+
+      <providerOrganization>
+        <!--   CONF-DK:19, CONF-DK:20, CONF-DK:21, CONF-DK:22 -->
+        <id extension="393421000016009" root="1.2.208.176.1.1" assigningAuthorityName="SOR"/>
+        <name>Lægehuset Valdemarsgade</name>
+        <telecom value="tel:65119999" use="WP"/>
+        <telecom value="mailto:laege@valdemar.dk" use="H"/>
+        <telecom value="http://www.LeagehusetValdemar.dk" use="H"/>
+        <addr>
+          <streetAddressLine>Munkerisvej 10</streetAddressLine>
+          <streetAddressLine>Lægehuset</streetAddressLine>
+          <postalCode>5230</postalCode>
+          <city>Odense M</city>
+          <country>Danmark</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  
+  
+  <!-- the region entity  that is responsible for the appointment -->
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20201130112000+0100"/>
+    <assignedAuthor classCode="ASSIGNED">
+      <!-- the responsible organization providing home-care service according to the danish service law -->
+      <id extension="378631000016009" root="1.2.208.176.1.1" assigningAuthorityName="SOR"/>
+      <addr use="WP">
+        <streetAddressLine>Odense Universitetshospital</streetAddressLine>
+        <streetAddressLine>J. B. Winsløws Vej 4</streetAddressLine>
+        <postalCode>5000</postalCode>
+        <city>Odense</city>
+      </addr>
+      <telecom value="tel:65129999" use="WP"/>
+      <telecom value="mailto:sundhed@ok.dk" use="WP"/>
+      <!-- The triage responsible for the home care visit -->
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>Dorte</given>
+          <family>Jensen</family>
+        </name>
+      </assignedPerson>
+      <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+          <name>OUH, Odense Universitetshospital</name>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  
+  <!-- the health care organization and person requestet the appointment -->
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20201129122000+0100"/>
+    <assignedAuthor classCode="ASSIGNED">
+      <id extension="393421000016009" root="1.2.208.176.1.1" assigningAuthorityName="SOR"/>
+      <code code="REFB" codeSystem="2.16.840.1.113883.5.90"
+        codeSystemName="ParticipationType (HL7) Code System" displayName="ParticipationReferredBy"/>
+      <addr>
+        <streetAddressLine>Munkerisvej 10</streetAddressLine>
+        <streetAddressLine>Lægehuset</streetAddressLine>
+        <postalCode>5230</postalCode>
+        <city>Odense M</city>
+        <country>Danmark</country>
+      </addr>
+      <telecom value="tel:65119999" use="WP"/>
+      <telecom value="mailto:laege@valdemar.dk" use="H"/>
+      <telecom value="http://www.LeagehusetValdemar.dk" use="H"/>
+      <assignedPerson classCode="PSN">
+        <name>
+          <prefix>Læge</prefix>
+          <given>Elinor</given>
+          <family>Strøm</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  
+  <!-- the organisation responsible for maintaing the CDA document -->
+  <!-- ClinicalDocument.custodian 1..1 -->
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <!--ClinicalDocument.custodian.representedCustodianOrganization 1..1  -->
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <!--ClinicalDocument.custodian.representedCustodianOrganization.id 1..* CONF-DK:19, CONF-DK:20, CONF-DK:21, CONF-DK:22-  -->
+        <id extension="378631000016009" root="1.2.208.176.1.1" assigningAuthorityName="SOR"/>
+        <name>Region Syds Data-ansvarlige organisation</name>
+        <telecom value="mailto:dataansvarlige@rs.dk" use="WP"/>
+        <addr>
+          <streetAddressLine>Datavej 2</streetAddressLine>
+          <city>Odense S</city>
+          <postalCode>5260</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+
+  <!-- The template defining the appointment start and end time shall always be present (CONF-DK-APD:851d) and template shall only be defined once (CONF-DK-APD:37d2) -->
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="MPROT" moodCode="EVN">
+      <templateId root="1.2.208.184.10.1.11" />
+      <effectiveTime>
+        <low value="20210312120000+0100"/>
+        <high value="20210331120000+0200"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+
+  <!--This documentationOf holds the version of the CDA-profile -->
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="MPROT" moodCode="EVN">
+      <!--This templateId tells that this serviceEvent holds the identification (apd) 
+        and version (v2.0) of the CDA profile, CONF-DK-APD:69ee,CONF-DK-APD:0b61  -->
+      <templateId root="1.2.208.184.10.1.10" />
+      <!--This id @extension equals the identification and version of the CDA profile, CONF-DK-APD:a2e5, CONF-DK-APD:44bb,CONF-DK-APD:9f67, CONF-DK-APD: c69d -->
+      <id root="1.2.208.184.100.3" extension="apd-v2.0.1" assigningAuthorityName="MedCom"/>
+    </serviceEvent>
+  </documentationOf>
+
+  <!-- a documentationOf element 0..1 , CONF-DK-APD:42f3 -->
+  <documentationOf typeCode="DOC">
+
+    <serviceEvent classCode="MPROT" moodCode="EVN">
+      <!-- CONF-DK-APD:2035, CONF-DK-APD:42f3 -->
+      <templateId root="1.2.208.184.10.1.12" />
+
+      <!-- CONF-DK-APD:8aa5 -->
+      <id extension="0da1670f-2e41-4090-8657-0688ca7a937f" root="1.2.208.176.7.1.10.83"
+        assigningAuthorityName="Sundhedsvæsenets Klassifikations System"/>
+      <id extension="1d41e396-8c40-44ae-8827-b95afc3f4a7b" root="1.2.208.176.7.1.10.83"
+        assigningAuthorityName="Sundhedsvæsenets Klassifikations System"/>
+      <!-- CONF-DK-APD:158f,  CONF-DK-APD:44e3, CONF-DK-APD:b670, CONF-DK-APD:8b6d-->
+      <code code="ALAL21" codeSystem="1.2.208.176.2.4" codeSystemName="SKS"
+        displayName="Kronisk obstruktiv lungesygdom (KOL)  "/>
+    </serviceEvent>
+  </documentationOf>
+
+  <!-- CDA Body  ClinicalDocument.component 1..1  -->
+  <component>
+    <!-- CDA Body  ClinicalDocument.component.structuredBody 1..1  -->
+    <structuredBody>
+      <!-- CONF-DK-APD:63ff  -->
+      <component>
+        <!-- CONF-DK-APD:4981 -->
+        <section classCode="DOCSECT" moodCode="EVN">
+          <!-- 1098-7723, CONF-DK-APD:9b39, CONF-DK-APD: efbf -->
+          <templateId root="1.2.208.184.14.11.1" extension="2019-09-10"/>
+          <!-- CONF:1098-14749, CONF:1098-14750, 1098-30813, CONF-DK-APD: bfb2 -->
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <!-- CONF-DK-APD: d9f0 -->
+          <title>Aftale</title>
+          <!-- 1098-7725 -->
+          <text>
+            <paragraph>Aftale:</paragraph>
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <th>Aftale dato</th>
+                  <th>Vedrørende</th>
+                  <th>Udførende organisation</th>
+                  <th>Mødested</th>
+                  <th>Kommentar</th>
+
+                </tr>
+                <tr>
+                  <td>2021-03-12 12:00 - 2021-03-31 12:00</td>
+                  <td>Indlæggelse</td>
+                  <td>Regionshospitalet, Albanigade 10, 5000 Odense, Tlf. 66113322</td> 
+                  <td>Regionshospitalet, Albanigade 10, 5000 Odense, almen medicinsk afdeling, opgang 3</td>
+                  <td/>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+
+          <!--CONF-DK-APD: 8506 -->
+          <entry>
+            <!-- CONF-DK-APD:dfed -->
+            <encounter moodCode="APT" classCode="ENC">
+              <!-- CONF-DK-APD:49d8, CONF-DK-APD:ad5b   -->
+              <templateId root="1.2.208.184.14.11.2" extension="2019-09-10"/>
+              <!-- CONF-DK-APD:7493, CONF-DK-APD:22dd - same id as minimum apd example -->
+              <id root="1.2.208.184" extension="117ce9a8-393f-42db-af66-56d73e44b84f"
+                assigningAuthorityName="MedCom"/>
+              <!--  1098-14749, CONF-DK-APD:4df9, CONF-DK-APD:ed37, CONF-DK-APD:6306 -->
+              <code code="RegionalAppointment" codeSystem="1.2.208.184.100.1"
+                codeSystemName="MedCom Message Codes"> </code>
+              <!-- 134, CONF-DK-APD:0da6 -->
+              <statusCode code="active"/>
+              <!-- CONF-DK-APD:4021 -->
+              <effectiveTime>
+                <low value="20210312120000+0100"/>
+                <high value="20210331120000+0200"/>
+              </effectiveTime>
+              <!-- CONF-DK-APD:63d8 -->
+              <performer typeCode="PRF">
+                <!-- CONF-DK-APD:6f0d -->
+                <assignedEntity classCode="ASSIGNED">
+                  <!-- encounter.performer.assignedEntity.id 1..* CONF-DK:19, CONF-DK:20, CONF-DK:21, CONF-DK:22 -->
+                  <id extension="325441000016006" root="1.2.208.176.1.1"
+                    assigningAuthorityName="SOR"/>
+                  <representedOrganization>
+                    <name>Regionshospitalet</name>
+                    <telecom value="tel:66113322"/>
+                    <addr>
+                      <streetAddressLine>Albanigade 12</streetAddressLine>
+                      <city>Odense</city>
+                      <postalCode>5000</postalCode>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <!-- CONF-DK-APD:4ec7 -->
+              <participant typeCode="LOC">
+                <!-- CONF-DK-APD:889e or CONF-DK-APD:9b47 -->
+                <participantRole classCode="SDLOC">
+                  <templateId root="1.2.208.184.14.11.3" extension="2019-09-10"/>
+                  <id extension="325441000016006" root="1.2.208.176.1.1"
+                    assigningAuthorityName="SOR"/>
+                  <addr>
+                    <streetAddressLine>Regionshospitalet</streetAddressLine>
+                    <streetAddressLine>Albanigade 10</streetAddressLine>
+                    <city>Odense</city>
+                    <postalCode>5000</postalCode>
+                  </addr>
+                  <telecom value="tel:63221313"/>
+                  <!-- CONF-DK-APD:d9a4 -->
+                  <playingEntity>
+                    <name>almen medicinsk afdeling, opgang 3</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <!-- CONF-DK-APD:ae0f, CONF-DK-APD:68a1 -->
+              <entryRelationship typeCode="RSON">
+                <!-- CONF-DK-APD:250e, CONF-DK-APD:c362, CONF-DK-APD:7e02 -->
+                <observation classCode="OBS" moodCode="EVN">
+                  <!-- CONF-DK-APD:8993, CONF-DK-APD:aa36,CONF-DK-APD:4c2c  -->
+                  <code code="NI" displayName="Indlæggelse"/>
+                </observation>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
