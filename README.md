@@ -22,18 +22,18 @@ DTG: https://stamdata.nspop.dk/dtg-webservice/persons/0504899756
 
 DTG: https://stamdata.nspop.dk/dtg-webservice/persons/2202789083
 
-| Nr | Testens formål | Template | Dokument id | Faktisk xml | Cda viewer link* |
+| Nr  | Testens formål                                                                       | Template                                                                                                                                                                                                                 | Dokument id                                      | Faktisk xml                                                                           | Cda viewer link           |
 | --- | --- | --- |--- | --- | --- | 
-| 0201 | Region, aftale i fremtiden hvor start og sluttidspunkt er ikke samme dato | [DK-APD_Example_1_12_apd_region_days.xml](https://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_12_apd_region_days.xml)  |  |  |  |
-| 0202 | Region, aftale uden tidspunkt | [DK-APD_Example_1_7_apd_region_all_day.xml)](https://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_7_apd_region_all_day.xml)  |  |  |  |
-| 0203 | Region, overstået aftale | []()  |  |  |  |
+| 0201 | Region, aftale i fremtiden hvor start og sluttidspunkt er ikke samme dato           | [DK-APD_Example_1_12_apd_region_days.xml](https://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_12_apd_region_days.xml)                            | test0201-7953-49ce-8653-cp2202789083^1.2.208.184 | [XML](./xmlfiler/201_2202789083_DK-APD_Example_1_12_apd_region_days.xml)              | [Dokument](https://cdaviewer.medcom.dk/cdaviewer-test1/search?patientID=2202789083&uniqueID=test0201-7953-49ce-8653-cp2202789083%5e1.2.208.184) |
+| 0202 | Region, aftale uden tidspunkt                                                       | [DK-APD_Example_1_7_apd_region_all_day.xml)](https://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_7_apd_region_all_day.xml)                       | test0202-7953-49ce-8653-cp2202789083^1.2.208.184 | [XML](./xmlfiler/202_2202789083_DK-APD_Example_1_7_apd_region_all_day)                | [Dokument](https://cdaviewer.medcom.dk/cdaviewer-test1/search?patientID=2202789083&uniqueID=test0202-7953-49ce-8653-cp2202789083%5e1.2.208.184) |
+| 0203 | Region, overstået aftale                                                            | [DK-APD_Example_1_5_apd_region.xml](http://svn.medcom.dk/svn/releases/Standarder/HL7/Appointment/Eksempler/2.0/APD-DK_2_0_1_Testprotokol_v1.0/DK-APD_Example_1_5_apd_region.xml)                                         | test0203-7953-49ce-8653-cp2202789083^1.2.208.184 | [XML](./xmlfiler/203_2202789083_DK-APD_Example_1_5_apd_region.xml)                    | [Dokument](https://cdaviewer.medcom.dk/cdaviewer-test1/search?patientID=2202789083&uniqueID=test0203-7953-49ce-8653-cp2202789083%5e1.2.208.184) |
 
 ##  3. Fie Jørgensen 0705683972
 (IKKE APP AKTIV)
 
 DTG: https://stamdata.nspop.dk/dtg-webservice/persons/0705683972
 
-| Nr | Testens formål | Template | Dokument id | Faktisk xml | Cda viewer link* |
+| Nr  | Testens formål                                                                       | Template                                                                                                                                                                                                                 | Dokument id                                      | Faktisk xml                                                                           | Cda viewer link           |
 | --- | --- | --- |--- | --- | --- | 
 | 0301 | Kommune, aftale i fremtid | []()  |  |  |  |
 | 0302 | Kommune, overstået aftale | []()  |  |  |  |
@@ -44,7 +44,7 @@ DTG: https://stamdata.nspop.dk/dtg-webservice/persons/0705683972
 
 DTG: https://stamdata.nspop.dk/dtg-webservice/persons/0404849086
 
-| Nr | Testens formål | Template | Dokument id | Faktisk xml | Cda viewer link* |
+| Nr  | Testens formål                                                                       | Template                                                                                                                                                                                                                 | Dokument id                                      | Faktisk xml                                                                           | Cda viewer link           |
 | --- | --- | --- |--- | --- | --- | 
 | 0401 | Navne- og adressebeskyttelse | []()  |  |  |  |
 
@@ -53,7 +53,7 @@ DTG: https://stamdata.nspop.dk/dtg-webservice/persons/0404849086
 
 DTG: https://stamdata.nspop.dk/dtg-webservice/persons/1710194919
 
-| Nr | Testens formål | Template | Dokument id | Faktisk xml | Cda viewer link* |
+| Nr  | Testens formål                                                                       | Template                                                                                                                                                                                                                 | Dokument id                                      | Faktisk xml                                                                           | Cda viewer link           |
 | --- | --- | --- |--- | --- | --- | 
 | 0501 | Barn | []()  |  |  |  |
 
