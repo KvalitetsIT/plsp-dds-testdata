@@ -10,15 +10,15 @@
   <!-- MedCom DK CDA APD profile OID, CONF-DK-APD:6c69 -->
   <templateId root="1.2.208.184.14.1" extension="2019-09-10"/>
   <!-- CONF-DK-APD: a5bd, CONF-DK-APD: c89b -->
-  <id extension="test0202-0001-49ce-8653-cp2202789083" root="1.2.208.184"
+  <id extension="test0304-0001-49ce-8653-cp0705683972" root="1.2.208.184"
     assigningAuthorityName="MedCom"/>
   <!-- LOINC code for appointment date, CONF-DK-APD:7d26, CONF-DK-APD:e56b, CONF-DK-APD:4660 -->
   <code code="39289-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
     displayName="Dato og tidspunkt for møde mellem patient og sundhedsperson"/>
   <!-- title = "Aftale for" + patient id  CONF-DK-APD:9ac6 -->
-  <title>Aftale for 2202789083</title>
+  <title>Aftale for 0705683972</title>
   <!-- ClinicalDocumemt.effectiveTime 1..1 (xsd), CONF-DK: 33,CONF-DK: 35 -->
-  <effectiveTime value="20201130122000+0100"/>
+  <effectiveTime value="20191130122000+0100"/>
   <!-- CONF-DK: 36 -->
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
   <!-- CONF-DK: 37, CONF-DK: 38, CONF-DK: 39,CONF-DK: 40 -->
@@ -29,27 +29,26 @@
     <!-- exactly one patientRole element must be specified -->
     <patientRole classCode="PAT">
       <!-- patientRole.id 1..*, CONF-DK: 1, CONF-DK: 2, CONF-DK: 3, CONF-DK: 4, CONF-DK: 5 -->
-      <id extension="2202789083" root="1.2.208.176.1.2" assigningAuthorityName="CPR"/>
+      <id extension="0705683972" root="1.2.208.176.1.2" assigningAuthorityName="CPR"/>
       <addr use="WP">
-        <streetAddressLine>Frodesgade 434</streetAddressLine>
-        <postalCode>8751</postalCode>
-        <city>Gedved</city>
+        <streetAddressLine>Espegårdsvej 209</streetAddressLine>
+        <postalCode>1017</postalCode>
+        <city>København K</city>
       </addr>
       <telecom nullFlavor="NI"/>
       <patient classCode="PSN" determinerCode="INSTANCE">
         <name>
-          <given>Mads</given>
+          <given>Fie</given>
           <!-- CONF-DK:6 -->
-          <family>Svendsen</family>
+          <family>Jørgensen</family>
         </name>
-        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
-        <birthTime value="19780222000000+0000"/>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19680507000000+0000"/>
       </patient>
 
       <providerOrganization>
         <!--   CONF-DK:19, CONF-DK:20, CONF-DK:21, CONF-DK:22 -->
-        <id extension="123456" root="1.2.208.176.1.4"
-          assigningAuthorityName="Yderregisteret"/>
+        <id extension="393421000016009" root="1.2.208.176.1.1" assigningAuthorityName="SOR"/>
         <name>Lægehuset Valdemarsgade</name>
         <telecom value="tel:65119999" use="WP"/>
         <telecom value="mailto:laege@valdemar.dk" use="H"/>
@@ -68,7 +67,7 @@
   
   <!-- the region entity  that is responsible for the appointment -->
   <author typeCode="AUT" contextControlCode="OP">
-    <time value="20201130112000+0100"/>
+    <time value="20191130112000+0100"/>
     <assignedAuthor classCode="ASSIGNED">
       <!-- the responsible organization providing home-care service according to the danish service law -->
       <id extension="378631000016009" root="1.2.208.176.1.1" assigningAuthorityName="SOR"/>
@@ -95,9 +94,9 @@
   
   <!-- the health care organization and person requestet the appointment -->
   <author typeCode="AUT" contextControlCode="OP">
-    <time value="20201129122000+0100"/>
+    <time value="20191129122000+0100"/>
     <assignedAuthor classCode="ASSIGNED">
-      <id extension="123456" root="1.2.208.176.1.4"    assigningAuthorityName="Yderregisteret"/>
+      <id extension="393421000016009" root="1.2.208.176.1.1" assigningAuthorityName="SOR"/>
       <code code="REFB" codeSystem="2.16.840.1.113883.5.90"
         codeSystemName="ParticipationType (HL7) Code System" displayName="ParticipationReferredBy"/>
       <addr>
@@ -146,8 +145,8 @@
       <templateId root="1.2.208.184.10.1.11"/>
       <effectiveTime>
         <!-- CONF-DK: 33 , CONF-DK-APD:0b52, CONF-DK-APD:0561, CONF-DK-APD:592c -->
-        <low value="20201201000000+0100"/>
-        <high nullFlavor="NI"/>
+        <low value="20191207111500+0100"/>
+        <high value="20191207123000+0100"/>
       </effectiveTime>
     </serviceEvent>
   </documentationOf>
@@ -171,7 +170,9 @@
       <templateId root="1.2.208.184.10.1.12" />
 
       <!-- CONF-DK-APD:8aa5 -->
-      <id extension="18340633-df20-4cc8-bc4e-c4f1e6f905f7" root="1.2.208.176.7.1.10.83"
+      <id extension="cf0b2a79-dff1-4cdc-87d3-4e0c1fa7e991" root="1.2.208.176.7.1.10.83"
+        assigningAuthorityName="Sundhedsvæsenets Klassifikations System"/>
+      <id extension="11ea56fe-307f-4f54-8c37-ed09fcf73179" root="1.2.208.176.7.1.10.83"
         assigningAuthorityName="Sundhedsvæsenets Klassifikations System"/>
       <!-- CONF-DK-APD:158f,  CONF-DK-APD:44e3, CONF-DK-APD:b670, CONF-DK-APD:8b6d-->
       <code code="ALAL21" codeSystem="1.2.208.176.2.4" codeSystemName="SKS"
@@ -207,11 +208,11 @@
 
                 </tr>
                 <tr>
-                  <td>2020-12-01</td>
-                  <td>røntgenundersøgelse af thorax</td>
+                  <td>2019-12-07 11:15 - 2019-12-07 12:30</td>
+                  <td>lægekonsultation med ambulant patient</td>
                   <td>Regionshospitalet, Albanigade 10, 5000 Odense, Tlf. 66113322</td> 
                   <td>Regionshospitalet, Albanigade 10, 5000 Odense, opgang 4, 3 sal rum 101</td>
-                  <td>Der er ikke afsat et bestemt tidspunkt for undersøgelsen</td>
+                  <td/>
                 </tr>
               </tbody>
             </table>
@@ -224,7 +225,7 @@
               <!-- CONF-DK-APD:49d8, CONF-DK-APD:ad5b   -->
               <templateId root="1.2.208.184.14.11.2" extension="2019-09-10"/>
               <!-- CONF-DK-APD:7493, CONF-DK-APD:22dd - same id as minimum apd example -->
-              <id root="1.2.208.184" extension="8d066360-8069-4647-ad54-2290ac503174"
+              <id root="1.2.208.184" extension="0b3cfb2f-f76f-4a42-8098-2455ac7ece83"
                 assigningAuthorityName="MedCom"/>
               <!--  1098-14749, CONF-DK-APD:4df9, CONF-DK-APD:ed37, CONF-DK-APD:6306 -->
               <code code="RegionalAppointment" codeSystem="1.2.208.184.100.1"
@@ -233,8 +234,8 @@
               <statusCode code="active"/>
               <!-- CONF-DK-APD:4021 -->
               <effectiveTime>
-                <low value="20201201000000+0100"/>
-                <high nullFlavor="NI"/>
+                <low value="20191207111500+0100"/>
+                <high value="20191207123000+0100"/>
               </effectiveTime>
               <!-- CONF-DK-APD:63d8 -->
               <performer typeCode="PRF">
@@ -279,19 +280,10 @@
                 <!-- CONF-DK-APD:250e, CONF-DK-APD:c362, CONF-DK-APD:7e02 -->
                 <observation classCode="OBS" moodCode="EVN">
                   <!-- CONF-DK-APD:8993, CONF-DK-APD:aa36,CONF-DK-APD:4c2c  -->
-                  <code code="399208008" codeSystem="2.16.840.1.113883.6.96"
-                    codeSystemName="SNOMED CT" displayName="røntgenundersøgelse af thorax"/>
+                  <code code="17436001" codeSystem="2.16.840.1.113883.6.96"
+                    codeSystemName="SNOMED CT" displayName="lægekonsultation med ambulant patient"/>
                 </observation>
               </entryRelationship>
-              
-              <precondition>
-                <templateId root="1.2.208.184.14.11.5" extension="2019-09-10"/>
-                <criterion>
-                  <code code="GuidedIntervalType" codeSystem="1.2.208.184.100.1"
-                    codeSystemName="MedCom Message Codes"/>
-                  <text>Der er ikke afsat et bestemt tidspunkt for undersøgelsen</text>
-                </criterion>
-              </precondition>
             </encounter>
           </entry>
         </section>

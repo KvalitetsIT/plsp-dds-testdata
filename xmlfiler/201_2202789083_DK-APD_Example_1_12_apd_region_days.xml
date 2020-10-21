@@ -10,7 +10,7 @@
   <!-- MedCom DK CDA APD profile OID, CONF-DK-APD:6c69 -->
   <templateId root="1.2.208.184.14.1" extension="2019-09-10"/>
   <!-- CONF-DK-APD: a5bd, CONF-DK-APD: c89b -->
-  <id extension="test0201-7953-49ce-8653-cp2202789083" root="1.2.208.184"
+  <id extension="test0201-0001-49ce-8653-cp2202789083" root="1.2.208.184"
     assigningAuthorityName="MedCom"/>
   <!-- LOINC code for appointment date, CONF-DK-APD:7d26, CONF-DK-APD:e56b, CONF-DK-APD:4660 -->
   <code code="39289-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
@@ -43,7 +43,7 @@
           <family>Svendsen</family>
         </name>
         <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
-        <birthTime value="19782202000000+0000"/>
+        <birthTime value="19780222000000+0000"/>
       </patient>
 
       <providerOrganization>
